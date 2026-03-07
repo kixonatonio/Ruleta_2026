@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rueda Giratoria de Premios</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rueda de la Fortuna</h1>
+      <div class="Wheel" id="Wheel">
+        <div class="number" style="--i: 1; --clr: #e74c3c">
+          <span> Red Bull </span>
+        </div>
+        <div class="number" style="--i: 2; --clr: #ffffff">
+          <span> Mercedes </span>
+        </div>
+        <div class="number" style="--i: 3; --clr: #e74c3c">
+          <span> McLaren </span>
+        </div>
+        <div class="number" style="--i: 4; --clr: #ffffff">
+          <span> Alpine </span>
+        </div>
+        <div class="number" style="--i: 5; --clr: #e74c3c">
+          <span> Ferrari </span>
+        </div>
+        <div class="number" style="--i: 6; --clr: #ffffff">
+          <span> Aston Martin </span>
+        </div>
+        <div class="number" style="--i: 7; --clr: #e74c3c">
+          <span> Alfa Romero </span>
+        </div>
+        <div class="number" style="--i: 8; --clr: #ffffff">
+          <span> Williams </span>
+        </div>
+        <div class="number" style="--i: 9; --clr: #ffd700; --shine: 1">
+          <span> Big Prize</span>
+        </div>
+      </div>
+      <div class="spin-btn" id="spin-btn">SPIN</div>
+      <div class="cheat-button" id="cheatBtn">
+        cheat..........................................................
+      </div>
+      <div class="pointer"></div>
+
+      <div class="result" id="result"></div>
+    </div>
+
+    <audio id="spinSound" src="./Sounds/wheelSound.mp3" preload="auto"></audio>
+    <audio
+      id="winSound"
+      src="https://www.soundjay.com/human/sounds/applause-8.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="loseSound"
+      src="https://www.soundjay.com/mechanical/sounds/cartoon-fail-1.mp3"
+      preload="auto"
+    ></audio>
+
+    <script src="rueda.js"></script>
+  </body>
+</html>
